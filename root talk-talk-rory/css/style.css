@@ -1,0 +1,745 @@
+/* Talk Talk website created by: Rory Sargentson 2021.
+PRIMARY COLORS #09ECD2 Turquiose, #F84FBA Magenta Crayola, #38058A Pursian Indigo, #011312 Dark Jungle Green */
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     transition: all 0.3s;
+}
+ html{
+     scroll-behavior: smooth;
+}
+.dark-mode{
+  background-color: #011312; /* dark jungle */
+  color: #09ECD2;
+  transition: all 0.3s;
+  font-family: 'Fredoka One', sans-serif;
+  font-family: 'Questrial', sans-serif
+}
+.dark-mode h1, h2, h3, h4, h5{ /* dont know why but the dark mode only works when adding these extra classes in... */
+  color: #09ECD2;
+  transition: all 0.3s;
+}
+.dark-mode h2{
+  color: #09ECD2;
+  transition: all 0.3s;
+}
+.dark-mode h3{
+  color: #09ECD2;
+  transition: all 0.3s;
+}
+.dark-mode h4{
+  color: #09ECD2;
+  transition: all 0.3s;
+}
+.dark-mode h5{
+  color: #09ECD2;
+  transition: all 0.3s;
+}
+.dark-mode p, li, ul, a{
+  color: #09ECD2;
+  transition: all 0.3s;
+}
+.dark-mode a{
+  color: #09ECD2;
+  transition: all 0.3s;
+}
+.dark-mode svg{
+  color: #09ECD2;
+  transition: all 0.3s;
+}
+ body{
+     min-height: 100vh;
+     width: 100%;
+     margin: 0 auto;
+     background-color: #09ECD2; /* Turquiose */
+     color: #011312; /* black */
+     line-height: 1.6;
+     font-family: 'Fredoka One', sans-serif;
+     font-family: 'Questrial', sans-serif;
+     -webkit-font-smoothing: antialiased;
+     -webkit-text-size-adjust: 100%;
+}
+
+.dark-mode-button{
+  background-color: #011312; /* dark jungle */
+  color: #09ECD2; /* Turquiose */
+}
+::selection {
+    background-color: #98E718;
+    color: #000;
+}
+body h1,h2,h3,h4,h5{
+  margin: 0;
+  font-family: 'Fredoka One';
+  color: #000;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+body p, li, ul, a{
+  margin: 0;
+  font-family: 'Questrial', sans-serif;
+  color: #000;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+/*start navbar */
+.navbar{
+  background-color: #38058A;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  box-shadow: inset 0px -1px #0effff;
+}
+.navbar a{
+  color: #fff;
+}
+/* end navbar */
+
+section, header{
+  height: 100vh;
+}
+
+/* start header section */
+.header-section{
+  height: 100vh;
+}
+.header-section{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.header-img{
+  margin-top: -35vh;
+  margin-right: 20vh;
+  width: 100%;
+  position: relative;
+}
+.img-fluid{
+  position: absolute;
+  float: left;
+}
+.side-bg{
+  background-color: blue;
+  float: left;
+  display: block;
+  margin-right: 0;
+  z-index: -1;
+  padding-right: 50vh;
+}
+.header-text h1{
+  font-size: 80pt;
+  margin-top: 10vh;
+}
+.header-text p{
+  font-size: 35pt;
+  margin-top: 4vh;
+  font-weight: normal;
+  width: 100%;
+}
+.top-buttons{
+
+  display: inline-block;
+  margin-top: 5vh;
+  background-color: #09ECD2; /* Turquiose */
+  border-color: #38058A;
+  border-width: 2px;
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+.top-buttons:hover{
+  background-color: #38058A;
+  color: #09ECD2;
+}
+/* end header section */
+
+/* start intro section */
+.intro-section{
+  height: 120vh;
+  background-color: #38058A;
+/*transform:rotate(5deg);*/
+}
+.intro-section h1{
+  font-size: 40pt;
+  margin-top: 10vh;
+  color: #09ECD2;
+}
+.intro-section p{
+  font-size: 30pt;
+  margin-top: 5vh;
+  color: #09ECD2;
+}
+
+/* ennd intro section */
+.spin-cards{
+  margin-top: 6vh;
+}
+.spin-cards{
+box-sizing: inherit;
+}
+.bg1{
+  display: inline-block;
+  background-color: #808080; /* grey color */
+      margin-top: 1vh;
+      width: 20px;
+      height: 50vh;
+      border-radius: 15px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: left;
+      z-index: 0;
+}
+.bg1 li{
+  z-index: 1;
+  color: #000;
+  font-size: 18pt;
+  line-height: 2;
+  text-align: center;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  text-decoration: none;
+  list-style: none;
+}
+.bg1 h1{
+  margin-top: 1vh;
+  color: #000;
+  font-size: 40pt;
+}
+
+.bg2{
+  display: inline-block;
+  background-color: #09ECD2;
+      margin-top: 1vh;
+      width: 20px;
+      height: 50vh;
+      border-radius: 15px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: right;
+      z-index: 0;
+    background: linear-gradient(246deg, #09ecd2, #f84fba);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:0% 86%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:0% 86%}
+}
+
+
+.bg2 li{
+  z-index: 1;
+  color: #000;
+  font-size: 18pt;
+  line-height: 2;
+  text-align: center;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  text-decoration: none;
+  list-style: none;
+}
+.bg2 h1{
+  margin-top: 1vh;
+  color: #000;
+  font-size: 40pt;
+}
+.company-icons{
+  background-color: #06DBC2;
+}
+/* end intro section */
+
+/* start section 2 */
+.section2{
+  height: 100vh;
+  margin-top: 20vh;
+  background-image: url("../img/bg/shoutit.png"); /* Figure 2. Rory Sargentson. "3D Megaphone." 2021. Personal image. */
+  background-size:  contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-clip: border-box;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". .";
+}
+
+.shout{
+  margin-top: 20vh;
+transform:rotate(50deg);
+text-align: left;
+}
+.club-txt{
+  margin-top: 85vh;
+}
+.club-txt p{
+  font-size: 30pt;
+}
+.collapse-area{
+  margin-top: 10vh;
+}
+.collapse-btn{
+  background-color: #F84FBA;
+}
+.collapse-btn:hover{
+  border-radius: 130px;
+  box-shadow:  16px 16px 32px #057f71,
+               -16px -16px 32px #0dffff;
+}
+
+.collapse-btn h4{
+  color: #38058A;
+}
+.card-collapse-body{
+  background-color: #38058A;
+  align-content: center;
+  border-radius: 50px;
+}
+/* end section 2 */
+
+/* start section 3 */
+.section3{
+  height: 100vh;
+  margin-top: 90vh;
+}
+.smile-cry{
+  background-image: url("../img/bg/explode.gif"); /* figure 00. Teacher. "Show your foot to the world!". 2021, digital image. Show your foo. https://showyourfoo.blogspot.com/2017/09/baking-class.html */
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  margin-top: 2vh;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mobile3d{
+  z-index: -1;
+  float: left;
+  display: block;
+  position: relative;
+  justify-content: flex-start;
+  width:60%;
+  margin-top: -70vh;
+  margin-left: -60vh;
+  overflow: hidden;
+  -webkit-filter: blur(0px);
+}
+.youtube3d{
+  z-index: -1;
+  float: right;
+  display: block;
+  position: relative;
+  justify-content: flex-start;
+  width:60%;
+  margin-top: -50vh;
+  margin-right: -40vh;
+  overflow: hidden;
+  -webkit-filter: blur(0px);
+}
+.netflix3d{
+  z-index: -1;
+  float: left;
+  display: block;
+  position: relative;
+  justify-content: flex-start;
+width:80%;
+  margin-top: -10vh;
+  margin-left: -40vh;
+  overflow: hidden;
+  -webkit-filter: blur(0px);
+}
+.sheesh{
+  font-size: 26pt;
+  text-align: center;
+  padding: 10vh;
+}
+.sheesh-bg{
+  /*background-image: url("../img/icon/mobile-icon-3d.png"); /* figure 00. Teacher. "Show your foot to the world!". 2021, digital image. Show your foo. https://showyourfoo.blogspot.com/2017/09/baking-class.html */
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right: 50vh;
+}
+.service-circle {
+  margin-top: 10vh;
+  display: inline-block;
+  position:  relative;
+  background-color: #38058A;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 232px;
+  height: 232px;
+}
+.circle-2{
+  margin-top: -10vh;
+}
+.circle-3 h4{
+  font-size: 16pt;
+}
+.circle-text{
+  text-align: center;
+   position: absolute;
+    top: 68px;
+    left: auto;
+    z-index: 1;
+}
+/* end section 3 */
+
+/* start section 4 */
+.section4{
+  height: 140vh;
+  margin-top: 90vh;
+  background-color: #38058A;
+}
+.section4 h1{
+  color: #09ECD2;
+}
+.header-p{
+  font-size: 20pt;
+}
+.carousel{
+  margin-top: 5vh;
+  width: 50%;
+  z-index: 1;
+}
+.testimonial-card{
+  background-color: #F84FBA;
+  border-radius: 50px;
+  margin-bottom: 10vh;
+}
+.testimonial-card p{
+  font-size: 16pt;
+}
+.rounded-circle{
+}
+.send-btn{
+  background-color: #38058A;
+  color: #fff;
+}
+.subscribe-btn {
+  margin-top: 4vh;
+  width: 20vh;
+  background-color: #F84FBA;
+}
+.sign-up-txt{
+  margin-top: 6vh;
+}
+/* end section 4 */
+
+/* start section 5 */
+.section5{
+  height: 110vh;
+  margin-top: 10vh;
+}
+
+.map-container-section {
+  overflow:hidden;
+  position:relative;
+  display: flex;
+  height:0;
+}
+.map-container-section iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+.send-it-btn{
+  background-color: #38058A;
+}
+/* end section 5 */
+.footer{
+  bottom: 5vh;
+  background-color: #011312;
+  color: #09ECD2;
+}
+.footer h5{
+  color: #09ECD2;
+}
+.footer p{
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 768px) { /* start media querys */
+  /* For mobile phones: */
+  .header-section{
+    height: 100vh;
+  }
+  .header-img{
+    margin-top: -50vh;
+    width: 100%;
+    position: relative;
+  }
+   .header-text h1{
+    font-size: 45pt;
+    margin-top: 10vh;
+    text-align: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
+  }
+     .header-text p{
+    font-size: 25pt;
+    margin-top: 4vh;
+    text-align: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
+  }
+  .top-buttons-container{
+    margin-top: 31vh;
+    width: 100%;
+    padding-right: 5vh;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .top-buttons{
+    margin-top: 2vh;
+  margin-left: auto;
+  margin-right: 5vh;
+  }
+  /* start intro section */
+  .intro-section{
+    height: 100vh;
+    background-color: #38058A;
+  /*transform:rotate(5deg);*/
+
+  }
+  .intro-section h1{
+    font-size: 30pt;
+    margin-top: 10vh;
+    color: #09ECD2;
+
+  }
+  .intro-section p{
+    font-size: 20pt;
+    margin-top: 5vh;
+    color: #09ECD2;
+    text-align: center;
+  }
+
+  .bg1{
+    background-color: #808080; /* grey color */
+        margin-top: 1vh;
+        width: 50%;
+        height: 50vh;
+        border-radius: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: left;
+        z-index: 0;
+        overflow: hidden;
+  }
+  .bg1 li{
+    z-index: 1;
+    color: #000;
+    font-size: 12pt;
+    text-align: center;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    text-decoration: none;
+    list-style: none;
+  }
+  .bg1 h1{
+    font-size: 20pt;
+    margin-top: 1vh;
+    color: #000;
+  }
+  .bg2{
+        background-color: #09ECD2;
+        margin-top: 1vh;
+        width: 50%;
+        height: 50vh;
+        border-radius: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right;
+        z-index: 0;
+        overflow: hidden;
+        background: linear-gradient(246deg, #09ecd2, #f84fba);
+        background-size: 100%;
+        -webkit-animation: AnimationName 3s ease infinite;
+        animation: AnimationName 3s ease infinite;
+  }
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 86%}
+      50%{background-position:100% 15%}
+      100%{background-position:0% 86%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:0% 86%}
+      50%{background-position:100% 15%}
+      100%{background-position:0% 86%}
+  }
+  .bg2 li{
+    z-index: 1;
+    color: #000;
+    font-size: 12pt;
+    text-align: center;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    text-decoration: none;
+    list-style: none;
+  }
+  .bg2 h1{
+    font-size: 20pt;
+    margin-top: 1vh;
+    color: #000;
+  }
+  .quick-stats{
+    height: 10vh;
+  }
+  .quick-stats li{
+    display: flex;
+    font-size: 10pt;
+  }
+  /* end intro section */
+  /* start section 2 */
+  .section2{
+    height: 70vh;
+    margin-top:2vh;
+  }
+  .shout{
+    margin-top: 14vh;
+    text-align: right;
+  transform:rotate(50deg);
+  }
+  .club-txt{
+    margin-top: 55vh;
+  }
+  .club-txt p{
+    font-size: 20pt;
+  }
+  .collapse-area{
+    width: 100%;
+    margin-top: 10vh;
+    align-content: center;
+  }
+  .collapse-btn{
+    width: 100%;
+    margin-top: 5vh;
+    background-color: #F84FBA;
+  }
+  /* section 3 */
+  .section3{
+  height: 70vh;
+  }
+  .section3 h1{
+  font-size: 28pt;
+  }
+  .sheesh{
+    font-size: 16pt;
+    text-align: center;
+  }
+  .service-circle {
+    margin-top: 2vh;
+    display: inline-block;
+    background-color: #38058A;
+    border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    width: 180px;
+    height: 180px;
+  }
+  .circle-text{
+    text-align: center;
+     position: absolute;
+      top: 40px;
+      left: auto;
+      z-index: 1;
+      font-size: 10pt;
+  }
+  .circle-text h4{
+      font-size: 12pt;
+  }
+  .mobile3d{
+    z-index: -1;
+    float: left;
+    display: block;
+    position: relative;
+    justify-content: flex-start;
+    width: 50%;
+    margin-top: -50vh;
+    margin-left: -10vh;
+
+    overflow: hidden;
+    -webkit-filter: blur(0px);
+  }
+  .youtube3d{
+    z-index: -1;
+    float: right;
+    display: block;
+    position: relative;
+    justify-content: flex-start;
+    width:50%;
+    margin-top: -31vh;
+    margin-right: 0;
+    overflow: hidden;
+    -webkit-filter: blur(0px);
+  }
+  .netflix3d{
+    z-index: -1;
+    float: left;
+    display: block;
+    position: relative;
+    justify-content: flex-start;
+    width:50%;
+    margin-top: -20vh;
+    margin-left: -10vh;
+    overflow: hidden;
+    -webkit-filter: blur(0px);
+  }
+  /* end section 3 */
+
+  /* start section 4 */
+  .section4{
+    height: 150vh;
+  }
+  .section4 h1{
+    font-size: 28pt;
+  }
+  .header-p{
+    font-size: 18pt;
+    margin-top: 2vh;
+    text-align: center;
+  }
+  .carousel{
+    margin-top: 5vh;
+    width: 100%;
+    text-align: center;
+  }
+  /* end section 4 */
+
+  /* start section 5 */
+  .section5{
+    height: 130vh;
+
+  }
+  .section5 h1{
+    font-size: 28pt;
+    text-align: center;
+  }
+
+  /* end section 5 */
+
+}

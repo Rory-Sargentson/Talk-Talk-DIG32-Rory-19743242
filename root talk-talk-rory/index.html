@@ -1,0 +1,645 @@
+<!-- website created by: Rory Sargentson 2021. -->
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta name="description" content="Talk-Talk-Campaign-Rory-Sargentson">
+    <link rel=icon href=img/var/tt-logo.png>
+    <!--Typeface-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo/tt-logo.png" type="image/x-icon">
+    <!--Google Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--BS4 / JS-->
+    <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6 crossorigin=anonymous>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js integrity=sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf crossorigin=anonymous></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--End BS4 / JS-->
+    <!-- unpkg -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!-- jsdelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src=js/snap-scroll.js></script>
+    <!--AOS-->
+    <link href="js/manifest.json" rel="manifest">
+    <link rel=stylesheet href=https://unpkg.com/aos@next/dist/aos.css/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--End AOS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+    <title>Talk Talk • A Brighter Home For Everyone</title>
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="d-flex w-50 order-0">
+                <a class="navbar-brand mr-1" href="index.html">
+                    <img src="img/icon/talk-talk-logo.png" alt="logo" style="width: 18vh; margin-right: 5vh; margin-left: 16vh;" />
+                    <!-- Figure 1. Rory Sargentson. "Talk Talk 3d Campaign logo." 2021. Personal Render. -->
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+            </div>
+            <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top" style="font-size: 16pt;">top</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" style="font-size: 16pt;">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" style="font-size: 16pt;">contact</a>
+                    </li>
+                </ul>
+                <button class="dark-mode-button button btn" style="width: 6vh;" onclick="myFunction()"><i class="bi bi-moon-stars-fill"></i>
+</button>
+            </div>
+        </nav>
+
+        <!-- responsive equal width cols, can be sm, md, lg, or xl -->
+        <header class="header-section header-text text-right" id="top">
+            <div class="header-bg"></div>
+            <div class="row">
+            <div class="container">
+                <div class="col-sm text-right">
+                    <h1 data-aos="fade-left" data-aos-duration="600">Talk Talk</h1>
+                    <p data-aos="fade-left">A Brighter Home For Everyone</p>
+                    <p style="font-size: 18pt;" data-aos="fade-up" data-aos-duration="1000">We make other telecoms super jealous<br /> by connecting you faster, stronger and longer with your friends <span style='font-size:5vh;'>&#128520;</span>
+                    </p>
+                    <div class="top-buttons-container">
+                        <button class="top-buttons btn grid" style="width: 10vh; height: 5vh;" data-toggle="modal" data-target="#modalSubscriptionForm">Sign up</button>
+                        <button class="top-buttons btn grid" style="width: 13vh; height: 5vh;">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+        			<img src="img/bg/talk-talk-bg.png" alt="" class="header-img" data-aos="fade-up" data-aos-duration="2000"/>
+        		</div>
+          </div>
+
+        </header>
+        <div class="py-7">
+            <!-- company icons row -->
+            <div class="container-fluid company-icons">
+                <div class="row">
+                </div>
+                <div class="row align-items-center justify-content-center justify-content-lg-around">
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-5 mb-lg-0 text-center" data-aos="flip-left" data-aos-duration="600"><img src="img/icon/disney.png" alt="" style=" width: 8vh;" /></div><!-- figure 2. Icon Finder. "Disney Logo." 2021. Digital Image. Reproduced from: https://www.iconfinder.com/icons/7033669/disney_plus_icon -->
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-5 mb-lg-0 text-center" data-aos="flip-left" data-aos-duration="800"><img src="img/icon/netflix.png" alt="" style=" width: 8vh;" /></div><!-- figure 3. Icon Finder. "Netflit Logo." 2021. Digital Image. Reproduced from: https://www.iconfinder.com/icons/7124274/netflix_logo_icon -->
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-5 mb-lg-0 text-center" data-aos="flip-left" data-aos-duration="1000"><img src="img/icon/amazon.png" alt="" style=" width: 8vh;" /></div><!-- figure 4. Icon Finder. "Amazon Logo." 2021. Digital Image. Reproduced from: https://www.iconfinder.com/icons/7564181/amazon_prime_logo_brand_icon -->
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-5 mb-lg-0 text-center" data-aos="flip-left" data-aos-duration="1200"><img src="img/icon/twitch.png" alt="" style=" width: 8vh;" /></div><!-- figure 5. Icon Finder. "Twitch Logo." 2021. Digital Image. Reproduced from: https://www.iconfinder.com/icons/5296513/gamer_gaming_live_stream_twitch_twitch_logo_icon -->
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-5 mb-lg-0 text-center" data-aos="flip-left" data-aos-duration="1400"><img src="img/icon/youtube.png" alt="" style=" width: 8vh;" /></div><!-- figure 6. Icon Finder. "Youtube Logo." 2021. Digital Image. Reproduced from: https://www.iconfinder.com/icons/5296522/youtube_youtube_logo_icon -->
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-5 mb-lg-0 text-center" data-aos="flip-left" data-aos-duration="1600"><img src="img/icon/appletv.png" alt="" style=" width: 8vh;" /></div><!-- figure 7. Icon Finder. "Apple TV Logo." 2021. Digital Image. Reproduced from: https://www.iconfinder.com/icons/7627445/app_technology_logo_apple_tv_television_smart_icon -->
+                </div>
+            </div>
+        </div>
+
+        <section class="intro-section container-fluid" id="about">
+            <div class="row">
+
+                <h1 class="text-center" data-aos="fade-up" data-aos-duration="600">What makes Talk Talk different?</h1>
+                <p class="text-center" data-aos="fade-up" data-aos-duration="1000">Other Companies give you Vanilla...
+                    <br /> But Talk Talk gives you <br/><b>BUBBLE GUM</b>.</p>
+                <div class="spin-cards container">
+                    <div class="row">
+                        <div class="bg1 col-sm text-center shadow-lg" data-aos="fade-left" data-aos-duration="600">
+                            <h1>Ordinary Telecoms</h1>
+                            <ul>
+                                <li>
+                                    <b>
+              Super Boring.
+              </b>
+                                </li>
+                                <li>
+                                    <b>
+              Won't try to understand you.
+              </b>
+                                </li>
+                                <li>
+                                    <b>
+              Deals for first new users? Doesn't exist.
+              </b>
+                                </li>
+                                <li>
+                                    <b>
+              Blah blah blah blah *Snoring Noises*
+              </b>
+                                </li>
+                            </ul>
+                            <span style='font-size:10vh;'>&#128078;</span>
+
+                        </div>
+
+                        <div class="bg2 col-sm text-center shadow-lg" data-aos="fade-right" data-aos-duration="600">
+                            <h1>Talk Talk</h1>
+                            <ul>
+                                <li>
+                                    <b>
+            connecting you with the ones who matter most to you.
+            </b>
+                                </li>
+                                <li>
+                                    <b>
+          We bring the 'You' in youth.
+          </b>
+                                </li>
+                                <li>
+                                    <b>
+        You have a beautiful voice to shout; we have no noise complaints.
+        </b>
+                                </li>
+                            </ul>
+                            <span style='font-size:10vh;'>&#128077;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section2 container"  data-aos="fade-right" data-aos-duration="600">
+            <!-- start section 2 -->
+            <div class="row grid-container">
+                <h1 class="shout container-fluid" style="font-size: 80pt;">SHOUT!!</h1>
+            </div>
+            <div class="club-txt text-center"  data-aos="fade-right" data-aos-duration="800">
+                <p >If you thought singing at the club made your voice sore, wait until you see what our conection plans do.</p>
+            </div>
+            <div class="collapse-area container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>
+                            <button class="collapse-btn btn" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false"  data-aos="slide-up" data-aos-duration="600">
+          <h4>Student Saver</h4>
+        </button>
+                        </p>
+                        <div class="collapse" id="collapse1">
+                            <div class="card card-body card-collapse-body">
+                                <p style="color: #fff;">
+                                    Students who are studying online or at campus can apply for Student Saver, which will give you free choices for you broadband plan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                            <button class="collapse-btn btn" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" data-aos="slide-up" data-aos-duration="600">
+          <h4>Stay-At-Homer</h4>
+        </button>
+                        </p>
+                        <div class="collapse" id="collapse2">
+                            <div class="card card-body card-collapse-body">
+                                <p style="color: #fff;">
+                                    Staying at home to work or study because the world got yeeted? Well, now you can be a couch potato too! We offer unlimited plans that will keep you amused.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                            <button class="collapse-btn btn" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" data-aos="slide-up" data-aos-duration="600">
+<h4>First Timer Reward</h4>
+      </button>
+                        </p>
+                        <div class="collapse" id="collapse3">
+                            <div class="card card-body card-collapse-body">
+                                <p style="color: #fff;">
+                                    Just moved out of your family home kicking and screaming? We understand, we've been there before and still kicking and screaming.<br /> So we decided to give you young people a little gift to help you on your journey. <br /> Offer only available for first time Telecom buyers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+
+        <section class="section3 container">
+            <div class="row">
+                <h1 class="text-center" data-aos="fade-right" data-aos-duration="600">Stream Until Your Eyes Explode</h1>
+            </div>
+            <img src="img/icon/smile-cry.png" alt="" class="smile-cry container" style="width: 20vh; padding: 5vh;" /><!-- figure 2. Teacher. "Show your foot to the world!". 2021, digital image. Show your foo. https://showyourfoo.blogspot.com/2017/09/baking-class.html -->
+            <div class="container-fluid sheesh-bg">
+            <div class="row">
+              <p class="sheesh" data-aos="slide-up" data-aos-duration="600">
+                We've got you covered when it comes to streaming your favourite content. <br /><br />
+                You and your friends will be saying <b>"Sheesh!"</b> when you experience our lightning fast downlaod speeds.
+              </p>
+            </div>
+
+            <div class="services-icons container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="service-circle">
+    <div class="circle-text">
+      <h4 style="color: #09ECD2;">No Cap on Your Downloads</h4>
+      <svg xmlns="http://www.w3.org/2000/svg" style="color: #09ECD2;" width="40" height="40" fill="currentColor" class="bi bi-cloud-download" viewBox="0 0 16 16">
+  <path d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"/>
+  <path d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/><!-- Figure 8. Bootstrap. "Cloud Download." 2021. Digital Image. Reproduced from: Bootstrap. https://icons.getbootstrap.com/icons/cloud-download/ -->
+</svg>
+    </div>
+  </div>
+</div>
+
+  <div class="col-sm-4">
+  <div class="service-circle circle-2">
+<div class="circle-text">
+  <h4 style="color: #09ECD2;">Share Accounts with Friends</h4>
+  <svg xmlns="http://www.w3.org/2000/svg" style="color: #09ECD2;" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+  </svg><!-- Figure 9. Bootstrap. "Heart." 2021. Digital Image. Reproduced from: Bootstrap. https://icons.getbootstrap.com/icons/heart/ -->
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+  <div class="service-circle circle-3">
+<div class="circle-text">
+  <h4 style="color: #09ECD2;">Bring Wifi With You Wherever You Go!</h4>
+  <svg xmlns="http://www.w3.org/2000/svg" style="color: #09ECD2;" width="40" height="40" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
+  <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z"/>
+  <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+</svg><!-- Figure 10. Bootstrap. "Wifi." 2021. Digital Image. Reproduced from: Bootstrap. https://icons.getbootstrap.com/icons/wifi/ -->
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<img src="img/icon/mobile-icon-3d.png" alt="" class="mobile3d container" data-aos="flip-left" data-aos-duration="1000"/><!--Figure 11. Rory Sargentson. "Talk Talk 3D Mobile." 2021. Personal image. -->
+<img src="img/icon/youtube-icon-3d.png" alt="" class="youtube3d container" data-aos="flip-right" data-aos-duration="1000"/><!--Figure 12. Rory Sargentson. "Talk Talk 3D Youtube." 2021. Personal image. -->
+<img src="img/icon/netflix-icon-3d.png" alt="" class="netflix3d container"data-aos="flip-left" data-aos-duration="1000" /><!--Figure 13. Rory Sargentson. "Talk Talk 3D Netflix." 2021. Personal image. -->
+            </div>
+</section>
+<!-- end section 3 -->
+
+<!-- start section 4 -->
+<section class="section4 container-fluid">
+            <div class="row row-bg">
+                <h1 class="text-center" data-aos="fade-right" data-aos-duration="600" >Still worried about choosing your first Telecom?</h1>
+                <p class="container header-p" style="color: #09ECD2;"  data-aos="fade-right" data-aos-duration="800">
+                    Fear not, Fam. <br />
+                    Here is some proof that we're lit and legit.<span style='font-size:50px;'>&#128526;</span>
+
+                </p>
+            </div>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade container" data-ride="carousel"><!-- start catousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <!-- Card -->
+  <div class="card testimonial-card">
+    <!-- Background color -->
+    <div class="card-up"></div>
+
+    <!-- Avatar -->
+    <div class="avatar mx-auto white">
+      <img src="img/profile/man-1.png" class="rounded-circle"
+        alt="man avatar" style="width:25vh; height:27vh; margin-top: 5vh;"><!-- Figure 14. Yingchou Han. "Stockholm man with headphones." 2017, Digital image. Reproduced from: Unsplash. https://unsplash.com/photos/IJrIeCs3D4g -->
+    </div>
+    <!-- Content -->
+    <div class="card-body">
+      <!-- Name -->
+      <h3 class="card-title" style="color: #000;">Sam Smith</h3>
+      <h5 style="color: #000;">OUA University Stuent </h5>
+      <hr>
+      <!-- Quotation -->
+      <p style="color: #000;"><i class="fas fa-quote-left"></i>Talk Talk are different! They set me up with a student account and now I have free calls and wifi so I can talk to everyone. My days at home are brighter now!</p>
+    </div>
+
+  </div>
+  <!-- Card -->
+                </div>
+                <div class="carousel-item">
+                  <!-- Card -->
+  <div class="card testimonial-card">
+
+    <!-- Background color -->
+    <div class="card-up indigo lighten-1"></div>
+
+    <!-- Avatar -->
+    <div class="avatar mx-auto white">
+      <img src="img/profile/woman-1.png" class="rounded-circle"
+        alt="woman avatar"  style="width:25vh; height:27vh; margin-top: 5vh;"><!-- Figure 15. Michael Damn. "Happy Daughter." 2017, Digital image. Reproduced from: Unsplash. https://unsplash.com/photos/mEZ3PoFGs_k -->
+    </div>
+
+    <!-- Content -->
+    <div class="card-body">
+      <!-- Name -->
+      <h3 class="card-title" style="color: #000;">Matoi Ryuko</h3>
+      <h5 style="color: #000;">Just moved out of her family home</h5>
+      <hr>
+      <!-- Quotation -->
+      <p style="color: #000;"><i class="fas fa-quote-left"></i>I spend hours each day talking to my friends and family. Being connected is super important to me
+      </p>
+    </div>
+
+  </div>
+  <!-- Card -->
+                </div>
+                <div class="carousel-item">
+                  <!-- Card -->
+  <div class="card testimonial-card">
+
+    <!-- Background color -->
+    <div class="card-up indigo lighten-1"></div>
+
+    <!-- Avatar -->
+    <div class="avatar mx-auto white">
+      <img src="img/profile/man-2.png" class="rounded-circle"
+        alt="man avatar2" style="width:25vh; height:27vh; margin-top: 5vh;"><!-- Figure 16. Iam Dooley. "Just me, Being me." 2018, Digital image. Reproduced from: Unsplash. https://unsplash.com/photos/d1UPkiFd04A -->
+    </div>
+
+    <!-- Content -->
+    <div class="card-body">
+      <!-- Name -->
+      <h3 class="card-title" style="color: #000;">Francis Baggins</h3>
+      <h5 style="color: #000;">Twitch Streamer</h5>
+      <hr>
+      <!-- Quotation -->
+      <p style="color: #000;"><i class="fas fa-quote-left"></i>I require my internet to be strong at all times. So I believe Talk Talk can provice that awesome service for me <b>#gotalktalk</b>
+      </p>
+    </div>
+  </div>
+  <!-- Card -->
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div><!-- end carousel -->
+
+            <hr />
+            <!-- subscribe form -->
+
+            <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Subscribe to Talk Talk</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-user prefix grey-text"></i>
+          <input type="text" id="form3" class="form-control validate" placeholder="Your Name">
+          <label data-error="wrong" data-success="right" for="form3">Name</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="number" id="form4" class="form-control validate" placeholder="Your Age">
+          <label data-error="wrong" data-success="right" for="form4">Age</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="form2" class="form-control validate" placeholder="Your Email">
+          <label data-error="wrong" data-success="right" for="form2">Email</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn send-btn">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <h3 class="sign-up-txt" style="color: #09ECD2;">Feeling the vibe? Sign up to our newsletter</h3>
+  <a href="" class="subscribe-btn btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalSubscriptionForm" style="color: #38058A; font-size:18pt;">Let's Go!</a>
+</div>
+        </section>
+<!-- end section 4 -->
+
+<!-- start section 5 -->
+        <section class="section5 container" id="contact">
+            <div class="row">
+                <h1>Come and join us on the wild side</h1>
+            </div>
+            <!-- Section: Contact v.1 -->
+<div class="my-5">
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-lg-5 mb-lg-0 mb-4">
+
+      <!-- Form with header -->
+      <div class="card" style="background-color:#09ECD2 ;">
+        <div class="card-body">
+          <!-- Header -->
+          <div class="form-header">
+            <h3 class="mt-2" style="color: #000;">Write to us:</h3>
+          </div>
+          <p class="dark-grey-text" style="color: #000;">First time Telecom buyer? Write us a short message about your concenrs or desires. <br />Our Awesome team will get in touch with you.</p>
+          <!-- Body -->
+          <div class="md-form">
+            <i class="fas fa-user prefix grey-text"></i>
+            <input type="text" id="form-name" class="form-control" placeholder="Name">
+            <label for="form-name">Your name</label>
+          </div>
+          <div class="md-form">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="number" id="form-age" class="form-control" placeholder="Age">
+            <label for="form-email">Your Age</label>
+          </div>
+          <div class="md-form">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="text" id="form-email" class="form-control" placeholder="Email">
+            <label for="form-email">Your email</label>
+          </div>
+          <div class="md-form">
+            <i class="fas fa-tag prefix grey-text"></i>
+            <input type="text" id="form-Subject" class="form-control" placeholder="Subject">
+            <label for="form-Subject">Subject</label>
+          </div>
+          <div class="md-form">
+            <i class="fas fa-pencil-alt prefix grey-text"></i>
+            <textarea id="form-text" class="form-control md-textarea" rows="3" placeholder="100 words or less"></textarea>
+            <label for="form-text"></label>
+          </div>
+          <div class="text-center">
+            <button class="btn send-it-btn" style="color: #fff;">Send it!</button>
+          </div>
+        </div>
+      </div>
+      <!-- Form with header -->
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-7">
+
+
+      <!-- Buttons-->
+      <div class="row text-center">
+        <div class="col-md-4">
+
+          <a class="btn-floating accent-1">
+
+          </a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
+          <h4>Address</h4>
+          <p class="mb-md-0">Soapworks, Ordsall Lane, Salford, M5 3TT </p>
+        </div>
+
+        <div class="col-md-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</svg>
+          <h4>Call us</h4>
+          <p>+44 (0)20 3417 1000</p>
+          <p class="mb-md-0">Mon - Fri, 8:00am - 9:00pm</p>
+        </div>
+
+        <div class="col-md-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+</svg>
+          <h4>Email</h4>
+          <a href="mailto:enquiries@talktalkplc.com" class="mb-0">enquiries@talktalkplc.com</a>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+</div>
+<!-- Section: Contact v.1 -->
+        </section>
+
+    </main>
+
+    <footer class="footer text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Copyright</h5>
+
+                    <p>
+                      DIG32 A3  "Talk Talk brief" Website Author: Rory Sargentson. Curtin University, 2020.
+                        This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author.
+                        All copyright material used remains copyright of the respective owners and has
+                        been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia).
+                        No part of this work may be reproduced without consent of the original copyright owners.
+                        See code comments for references
+                    </p>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Legal</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">mmm Cookies</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Credits</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Sitemap</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0">Info</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-white">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Campaings</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Charities</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Ethics Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Curtin University</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+</body>
+<script>
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          // dark mode
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const newColorScheme = e.matches ? "dark" : "light";
+    });
+
+      AOS.init();
+
+      barba.init({
+        // ...
+      })
+      function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+
+    $("header, section").SnapScroll({
+    });
+</script>
+
+</html>
+<!--DIG32 A3  "Talk Talk brief" Website Author: Rory Sargentson. Curtin University, 2020.
+    This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author.
+    All copyright material used remains copyright of the respective owners and has
+    been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia).
+    No part of this work may be reproduced without consent of the original copyright owners.
+    See code comments for references. -->
